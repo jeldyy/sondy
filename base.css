@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap");
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  font-language-override: 1;
+  background-color: var(--bg);
+  color: #fff;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+}
+
+[class*="__container"] {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.main {
+  flex: 1 1 auto;
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding-top: 84px;
+  gap: 16px;
+  max-height: 100%;
+  margin-bottom: 116px;
+}
+
+:root {
+  --main: #dab1ec;
+
+  --card-bg: rgba(218, 177, 236, 0.05);
+  --card-bg-active: rgba(218, 177, 236, 0.1);
+
+  --bg: #18131a;
+  --border1: #302b33;
+
+  --field-bg: rgba(218, 177, 236, 0.2);
+  --field-outline: #4c4152;
+  --field-text: #28212b;
+}

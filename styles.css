@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #181319;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.container {
+    background: linear-gradient(45deg, #DAB1EC, #3D1E6D);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px #DAB1EC;
+    width: 300px;
+    text-align: center;
+    animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+    0% { box-shadow: 0 0 30px #DAB1EC }
+    100% { box-shadow: 0 0 40px #edddf4; }
+}
+
+h2, h1 {
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 5px 0;
+    text-align: left;
+}
+
+input {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button, .btn {
+    background: linear-gradient(45deg, #9576a3, #594661);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    transition: background 1s ease-in-out, transform 0.3s ease;
+}
+
+button:hover, .btn:hover {
+    background: linear-gradient(45deg, #922cbd, #d895e6);
+    transform: scale(1.05);
+}
+
+#message {
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
